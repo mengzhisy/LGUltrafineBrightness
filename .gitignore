@@ -1,0 +1,5 @@
+cmake-*
+.idea
+target
+vcpkg_installed
+*.iml
