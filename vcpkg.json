@@ -4,6 +4,13 @@
   "version-string": "0.0.1",
   "builtin-baseline": "cef0b3ec767df6e83806899fe9525f6cf8d7bc91",
   "dependencies": [
-    "hidapi"
+    "hidapi",
+    {
+      "name": "qt5",
+      "default-features": false,
+      "features": [
+        "essentials"
+      ]
+    }
   ]
 }
