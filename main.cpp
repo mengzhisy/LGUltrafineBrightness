@@ -46,7 +46,7 @@ public:
         createTrayIcon();
 
         setWindowIcon(QIcon(":/images/sun.svg"));
-        this->resize(800, 120);
+        this->resize(250, 50);
 
         trayIcon->show();
     }
@@ -85,6 +85,7 @@ public:
 int main(int argc, char *argv[]) {
     brightness_init();
 
+    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, true);
     QApplication app(argc, argv);
 
     MainWindow window;
